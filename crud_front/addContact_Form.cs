@@ -26,5 +26,15 @@ namespace crud_front
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

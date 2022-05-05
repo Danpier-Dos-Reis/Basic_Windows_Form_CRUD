@@ -33,7 +33,7 @@
             this.labelSearch = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttSearch = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,18 +80,20 @@
             this.buttSearch.TabIndex = 1;
             this.buttSearch.Text = "Search";
             this.buttSearch.UseVisualStyleBackColor = false;
+            this.buttSearch.Click += new System.EventHandler(this.buttSearch_Click);
             // 
-            // button1
+            // buttAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
-            this.button1.Location = new System.Drawing.Point(700, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 58);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.buttAdd.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
+            this.buttAdd.Location = new System.Drawing.Point(700, 28);
+            this.buttAdd.Name = "buttAdd";
+            this.buttAdd.Size = new System.Drawing.Size(117, 58);
+            this.buttAdd.TabIndex = 2;
+            this.buttAdd.Text = "Add";
+            this.buttAdd.UseVisualStyleBackColor = false;
+            this.buttAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main_Form
             // 
@@ -99,7 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(826, 463);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttAdd);
             this.Controls.Add(this.buttSearch);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelSearch);
@@ -123,6 +125,6 @@
         private Label labelSearch;
         private TextBox textBox1;
         private Button buttSearch;
-        private Button button1;
+        private Button buttAdd;
     }
 }

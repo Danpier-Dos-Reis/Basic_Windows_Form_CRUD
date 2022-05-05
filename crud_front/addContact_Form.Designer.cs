@@ -38,6 +38,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.buttAddContact = new System.Windows.Forms.Button();
+            this.buttCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelFname
@@ -94,7 +95,7 @@
             this.textBoxFname.Location = new System.Drawing.Point(125, 46);
             this.textBoxFname.Name = "textBoxFname";
             this.textBoxFname.Size = new System.Drawing.Size(218, 33);
-            this.textBoxFname.TabIndex = 9;
+            this.textBoxFname.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -104,7 +105,7 @@
             this.textBox1.Location = new System.Drawing.Point(125, 165);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(218, 33);
-            this.textBox1.TabIndex = 10;
+            this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -114,7 +115,8 @@
             this.textBox2.Location = new System.Drawing.Point(125, 225);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(218, 33);
-            this.textBox2.TabIndex = 11;
+            this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -124,26 +126,42 @@
             this.textBox3.Location = new System.Drawing.Point(125, 104);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(218, 33);
-            this.textBox3.TabIndex = 12;
+            this.textBox3.TabIndex = 1;
             // 
             // buttAddContact
             // 
             this.buttAddContact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.buttAddContact.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttAddContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
-            this.buttAddContact.Location = new System.Drawing.Point(95, 290);
+            this.buttAddContact.Location = new System.Drawing.Point(31, 300);
             this.buttAddContact.Name = "buttAddContact";
-            this.buttAddContact.Size = new System.Drawing.Size(189, 81);
-            this.buttAddContact.TabIndex = 13;
-            this.buttAddContact.Text = "Add Contact";
+            this.buttAddContact.Size = new System.Drawing.Size(112, 60);
+            this.buttAddContact.TabIndex = 4;
+            this.buttAddContact.Text = "Add";
             this.buttAddContact.UseVisualStyleBackColor = false;
+            // 
+            // buttCancel
+            // 
+            this.buttCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.buttCancel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
+            this.buttCancel.Location = new System.Drawing.Point(231, 300);
+            this.buttCancel.Name = "buttCancel";
+            this.buttCancel.Size = new System.Drawing.Size(112, 60);
+            this.buttCancel.TabIndex = 5;
+            this.buttCancel.Text = "Cancel";
+            this.buttCancel.UseVisualStyleBackColor = false;
+            this.buttCancel.Click += new System.EventHandler(this.buttCancel_Click);
             // 
             // addContact_Form
             // 
+            this.AcceptButton = this.buttAddContact;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(50)))));
+            this.CancelButton = this.buttCancel;
             this.ClientSize = new System.Drawing.Size(378, 397);
+            this.Controls.Add(this.buttCancel);
             this.Controls.Add(this.buttAddContact);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -175,5 +193,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private Button buttAddContact;
+        private Button buttCancel;
     }
 }
