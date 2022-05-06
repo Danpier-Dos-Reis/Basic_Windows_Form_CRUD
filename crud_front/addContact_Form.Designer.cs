@@ -33,10 +33,10 @@
             this.labelAddress = new System.Windows.Forms.Label();
             this.labePhone = new System.Windows.Forms.Label();
             this.labelLname = new System.Windows.Forms.Label();
-            this.textBoxFname = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.buttAddContact = new System.Windows.Forms.Button();
             this.buttCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -87,46 +87,46 @@
             this.labelLname.Text = "LastName:";
             this.labelLname.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBoxFname
+            // txtFirstName
             // 
-            this.textBoxFname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.textBoxFname.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textBoxFname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
-            this.textBoxFname.Location = new System.Drawing.Point(125, 46);
-            this.textBoxFname.Name = "textBoxFname";
-            this.textBoxFname.Size = new System.Drawing.Size(218, 33);
-            this.textBoxFname.TabIndex = 0;
+            this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
+            this.txtFirstName.Location = new System.Drawing.Point(125, 46);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(218, 33);
+            this.txtFirstName.TabIndex = 0;
             // 
-            // textBox1
+            // txtPhone
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
-            this.textBox1.Location = new System.Drawing.Point(125, 165);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 33);
-            this.textBox1.TabIndex = 2;
+            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
+            this.txtPhone.Location = new System.Drawing.Point(125, 165);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(218, 33);
+            this.txtPhone.TabIndex = 2;
             // 
-            // textBox2
+            // txtAddress
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
-            this.textBox2.Location = new System.Drawing.Point(125, 225);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 33);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
+            this.txtAddress.Location = new System.Drawing.Point(125, 225);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(218, 33);
+            this.txtAddress.TabIndex = 3;
+            this.txtAddress.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtLastName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
-            this.textBox3.Location = new System.Drawing.Point(125, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 33);
-            this.textBox3.TabIndex = 1;
+            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.txtLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(17)))), ((int)(((byte)(60)))));
+            this.txtLastName.Location = new System.Drawing.Point(125, 104);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(218, 33);
+            this.txtLastName.TabIndex = 1;
             // 
             // buttAddContact
             // 
@@ -139,6 +139,7 @@
             this.buttAddContact.TabIndex = 4;
             this.buttAddContact.Text = "Add";
             this.buttAddContact.UseVisualStyleBackColor = false;
+            this.buttAddContact.Click += new System.EventHandler(this.buttAddContact_Click);
             // 
             // buttCancel
             // 
@@ -163,10 +164,10 @@
             this.ClientSize = new System.Drawing.Size(378, 397);
             this.Controls.Add(this.buttCancel);
             this.Controls.Add(this.buttAddContact);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBoxFname);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.labelLname);
             this.Controls.Add(this.labePhone);
             this.Controls.Add(this.labelAddress);
@@ -188,10 +189,10 @@
         private Label labelAddress;
         private Label labePhone;
         private Label labelLname;
-        private TextBox textBoxFname;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtFirstName;
+        private TextBox txtPhone;
+        private TextBox txtAddress;
+        private TextBox txtLastName;
         private Button buttAddContact;
         private Button buttCancel;
     }

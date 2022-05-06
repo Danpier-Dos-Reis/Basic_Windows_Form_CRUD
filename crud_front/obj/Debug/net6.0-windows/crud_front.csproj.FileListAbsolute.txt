@@ -34,3 +34,10 @@ C:\Users\danpier\Desktop\CRUD_Solution\crud_front\obj\Debug\net6.0-windows\refin
 C:\Users\danpier\Desktop\CRUD_Solution\crud_front\obj\Debug\net6.0-windows\crud_front.pdb
 C:\Users\danpier\Desktop\CRUD_Solution\crud_front\obj\Debug\net6.0-windows\crud_front.genruntimeconfig.cache
 C:\Users\danpier\Desktop\CRUD_Solution\crud_front\obj\Debug\net6.0-windows\ref\crud_front.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\danpier\Desktop\CRUD_Solution\crud_front\obj\Debug\net6.0-windows\crud_front.csproj.CopyComplete

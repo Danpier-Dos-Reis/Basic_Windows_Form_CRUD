@@ -2,13 +2,6 @@ namespace crud_front
 {
     public partial class Main_Form : Form
     {
-
-        private void mostarAdd()
-        {
-            addContact_Form segundo = new addContact_Form();
-            segundo.ShowDialog();//Muestra la ventada por sobre la otra como un pop up
-        }
-
         // Pallete Colors
         // #06113C azul
         // #FF8C32 anaranjado
@@ -17,6 +10,10 @@ namespace crud_front
         {
             InitializeComponent();
         }
+
+        #region EVENTOS
+
+        #region EVENTOS SIN USAR
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
@@ -33,11 +30,25 @@ namespace crud_front
 
         }
 
-                      //Button Add
+        #endregion
+
+        //Button Add
         private void button1_Click(object sender, EventArgs e)
         {
-            mostarAdd();
+            mostrarAdd();
         }
+
+        #endregion
+
+        #region METODOS PRIVADOS
+
+        private void mostrarAdd()
+        {
+            addContact_Form segundo = new addContact_Form();
+            segundo.ShowDialog();//Muestra la ventada por sobre la otra como un pop up
+        }
+
+        #endregion
 
     }
 }
