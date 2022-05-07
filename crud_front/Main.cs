@@ -6,26 +6,25 @@ namespace crud_front
         // #06113C azul
         // #FF8C32 anaranjado
         // #DDDDDD gris con poca opacidad
+
+        private CapadeNegocios _capadeNegocios;
+
         public Main_Form()
         {
             InitializeComponent();
+            _capadeNegocios = new CapadeNegocios();
         }
 
         #region EVENTOS
 
         #region EVENTOS SIN USAR
 
-        private void Main_Form_Load(object sender, EventArgs e)
+        private void buttSearch_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttSearch_Click(object sender, EventArgs e)
         {
 
         }
@@ -38,6 +37,11 @@ namespace crud_front
             mostrarAdd();
         }
 
+        private void Main_Form_Load(object sender, EventArgs e) //El evento de cargar el formulario
+        {
+            populateContacts();
+        }
+
         #endregion
 
         #region METODOS PRIVADOS
@@ -46,6 +50,14 @@ namespace crud_front
         {
             addContact_Form segundo = new addContact_Form();
             segundo.ShowDialog();//Muestra la ventada por sobre la otra como un pop up
+        }
+
+        private void populateContacts(){
+
+            List<Contacto> Contact = _capadeNegocios.tenerContacts();
+
+            gridContacts.DataSource = Contact;//Para que retorne a la grilla la lista de contactos
+
         }
 
         #endregion

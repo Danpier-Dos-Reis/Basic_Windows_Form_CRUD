@@ -12,7 +12,32 @@ namespace crud_front
 {
     public partial class addContact_Form : Form
     {
+
+        #region MÉTODOS
+
+        private void saveContact(){
+
+            Contacto Contact = new Contacto();
+
+            //Estos son los nombres
+            //de los textBox de
+            //la segunda Ventana
+            Contact.FirstName = txtFirstName.Text;
+            Contact.LastName = txtLastName.Text;
+            Contact.Phone = txtPhone.Text;
+            Contact.Address = txtAddress.Text;
+
+            //No es necesario colocar el ID porque se
+            //inserta solo al ser autoincrementable
+
+            _capadeNegocios.guardarContacto(Contact);
+
+        }
+
         private CapadeNegocios _capadeNegocios;
+
+        #endregion
+
         public addContact_Form()
         {
             InitializeComponent();
@@ -53,22 +78,7 @@ namespace crud_front
 
         private void buttAddContact_Click(object sender, EventArgs e)
         {
-
-            Contacto Contact = new Contacto();
-
-                                //Estos son los nombres
-                                //de los textBox de
-                                //la segunda Ventana
-            Contact.FirstName = txtFirstName.Text;
-            Contact.LastName = txtLastName.Text;
-            Contact.Phone = txtPhone.Text;
-            Contact.Address = txtAddress.Text;
-
-            //No es necesario colocar el ID porque se
-            //inserta solo al ser autoincrementable
-
-            _capadeNegocios.guardarContacto(Contact);
-
+            saveContact();
         }
         #endregion
 

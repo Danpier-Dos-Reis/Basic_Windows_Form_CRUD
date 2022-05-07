@@ -27,5 +27,12 @@ namespace crud_front
             return Contact;
              
         }
+
+        public List<Contacto> tenerContacts(){
+        
+            return _capadeAccesoaDatos.tenerContacts();
+        
+        }
+
     }
 }
