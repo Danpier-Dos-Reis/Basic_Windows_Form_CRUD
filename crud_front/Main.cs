@@ -49,10 +49,13 @@ namespace crud_front
         private void mostrarAdd()
         {
             addContact_Form segundo = new addContact_Form();
-            segundo.ShowDialog();//Muestra la ventada por sobre la otra como un pop up
+
+            /*Como Owner ponemos el this, que hace referencia al objeto
+             * de la segunda ventana para después poder retornar algo*/
+            segundo.ShowDialog(this);//Muestra la ventada por sobre la otra como un pop up
         }
 
-        private void populateContacts(){
+        public void populateContacts(){
 
             List<Contacto> Contact = _capadeNegocios.tenerContacts();
 

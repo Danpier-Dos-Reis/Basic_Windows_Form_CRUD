@@ -79,6 +79,19 @@ namespace crud_front
         private void buttAddContact_Click(object sender, EventArgs e)
         {
             saveContact();
+            this.Close();
+
+            /*Esto nos permite ejeciutar el desde el botón de esta ventana, una
+             * acción que queremos que ocurra en la otra ventana. La otra ventana se
+             llama Main_Form.
+            
+             Para poder usar el método populateContacts() este debe ser público en la
+            ventana prinicpal.
+            
+             No entiendo bien la lógica del Owner. En ShowDialog() de la primera ventana, para mostrar
+            la segunda ventana tuvimos que añadir un "this" para luego en este lado, en vez de usar "Parent"
+            usaramos "Owner", y como arte de magia todo funciona*/
+            ((Main_Form)this.Owner).populateContacts();
         }
         #endregion
 
