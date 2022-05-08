@@ -42,6 +42,42 @@ namespace crud_front
             populateContacts();
         }
 
+
+        /*Este evento es cuando se hace click a un elemento dentros de la celda
+         del Grid*/
+        private void gridContacts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            /*aquí capturamos si en lo que se hizo click fue en una celda que contenga el link. Si no lo es,
+             va a retornar una valor que no es de tipo "DataGridViewLinkCell" por lo que "cell = null".
+            
+                                          Esta parte (DataGridViewLinkCell)
+                                          Verifica que el valor
+                                          que se devuelva sea de
+                                          tipo LinkCell*/
+            DataGridViewLinkCell cell = (DataGridViewLinkCell)gridContacts.Rows[e.RowIndex].Cells[e.ColumnIndex];
+
+                  //Cuando se haya echo click
+                  //en una columna llamada
+                  //Edit
+            if (cell.Value.ToString() == "Edit"){
+            
+                addContact_Form addContact = new addContact_Form();
+
+                addContact.loadContact(new Contacto
+                {
+
+                    Id = int.Parse(gridContacts.Rows[e.RowIndex].Cells[0].Value.ToString()),
+                    FirstName = gridContacts.Rows[e.RowIndex].Cells[1].Value.ToString(),
+                    LastName = gridContacts.Rows[e.RowIndex].Cells[2].Value.ToString(),
+                    Phone = gridContacts.Rows[e.RowIndex].Cells[3].Value.ToString(),
+                    Address = gridContacts.Rows[e.RowIndex].Cells[4].Value.ToString()
+
+                });
+                addContact.ShowDialog(this);
+            }
+            
+        }
+
         #endregion
 
         #region METODOS PRIVADOS

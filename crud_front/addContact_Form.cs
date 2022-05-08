@@ -13,6 +13,9 @@ namespace crud_front
     public partial class addContact_Form : Form
     {
 
+        private CapadeNegocios _capadeNegocios;
+        private Contacto _Contacto;
+
         #region MÉTODOS
 
         private void saveContact(){
@@ -27,14 +30,41 @@ namespace crud_front
             Contact.Phone = txtPhone.Text;
             Contact.Address = txtAddress.Text;
 
-            //No es necesario colocar el ID porque se
-            //inserta solo al ser autoincrementable
+            //Si _Contacto no tiene nada, entonces _Contacto.Id = 0
+            Contact.Id = _Contacto != null ? _Contacto.Id : 0;
 
             _capadeNegocios.guardarContacto(Contact);
 
         }
 
-        private CapadeNegocios _capadeNegocios;
+        public void loadContact(Contacto Contact)
+        {
+
+            _Contacto = Contact;
+
+            if (Contact != null){
+
+                clearForm(); //Limpiamos primero las cajas.
+            
+                txtFirstName.Text = Contact.FirstName;
+                txtLastName.Text = Contact.LastName;
+                txtPhone.Text = Contact.Phone;
+                txtAddress.Text = Contact.Address;
+            
+            }
+        }
+
+        private void clearForm(){
+
+            /*Esto borra el contenido de las cajas de texto si es que anteriormente
+             habiamos editado otro usuario*/
+
+            txtFirstName.Text = string.Empty;
+            txtLastName.Text = string.Empty;
+            txtPhone.Text = string.Empty;
+            txtAddress.Text = string.Empty;
+
+        }
 
         #endregion
 

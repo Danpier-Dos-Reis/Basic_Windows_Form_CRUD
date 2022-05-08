@@ -21,8 +21,9 @@ namespace crud_front
             if (Contact.Id == 0) {
                 _capadeAccesoaDatos.InsertContact(Contact);
             }
-            //else
-            //_capadeAccesoaDatos.UpdateContacto
+            else{
+                _capadeAccesoaDatos.ActualizarContact(Contact);
+            }
 
             return Contact;
              

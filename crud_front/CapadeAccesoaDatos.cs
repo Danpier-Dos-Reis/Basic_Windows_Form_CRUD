@@ -31,18 +31,18 @@ namespace crud_front
 
                 #region FORMA CORTA DE AÑADIR PARÁMETROS
 
-                SqlParameter lastName = new SqlParameter("@LastName", Contact.LastName);
-                SqlParameter phone = new SqlParameter("@phone", Contact.Phone);
-                SqlParameter address = new SqlParameter("@address", Contact.Address);
+                SqlParameter LastName = new SqlParameter("@LastName", Contact.LastName);
+                SqlParameter Phone = new SqlParameter("@phone", Contact.Phone);
+                SqlParameter Address = new SqlParameter("@address", Contact.Address);
 
                 #endregion
                                                    //Le pasamos el comando y la conexión
                 SqlCommand command = new SqlCommand(query,conn);
 
                 command.Parameters.Add(firstName);
-                command.Parameters.Add(lastName);
-                command.Parameters.Add(phone);
-                command.Parameters.Add(address);
+                command.Parameters.Add(LastName);
+                command.Parameters.Add(Phone);
+                command.Parameters.Add(Address);
 
                 //Nuestro algoritmo solo inserta una fila por lo que "ExecuteNonQuery" devolverá
                 //un 1 (uno) en caso de que todo salga bien, y cero si no insertó nada.
@@ -99,6 +99,47 @@ namespace crud_front
 
             return Contact;
         
+        }
+
+        public void ActualizarContact(Contacto Contact){
+
+            try
+            {
+                conn.Open();
+                string query = @"UPDATE users SET 
+                                    FirstName = @FirstName, 
+                                    LastName = @LastName, 
+                                    Phone = @Phone, 
+                                    Address = @Address 
+                                                  WHERE Id = @Id";
+
+                SqlParameter Id = new SqlParameter("@Id", Contact.Id);
+                SqlParameter FirstName = new SqlParameter("@FirstName", Contact.FirstName);
+                SqlParameter LastName = new SqlParameter("@LastName", Contact.LastName);
+                SqlParameter Phone = new SqlParameter("@phone", Contact.Phone);
+                SqlParameter Address = new SqlParameter("@address", Contact.Address);
+
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.Add(Id);
+                command.Parameters.Add(FirstName);
+                command.Parameters.Add(LastName);
+                command.Parameters.Add(Phone);
+                command.Parameters.Add(Address);
+
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally{
+
+                conn.Close();
+
+            }
+
         }
 
     }

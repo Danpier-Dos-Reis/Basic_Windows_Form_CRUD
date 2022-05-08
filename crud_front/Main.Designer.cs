@@ -36,6 +36,7 @@
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewLinkColumn();
             this.contactoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelSearch = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -55,13 +56,15 @@
             this.firstNameDataGridViewTextBoxColumn,
             this.lastNameDataGridViewTextBoxColumn,
             this.phoneDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn});
+            this.addressDataGridViewTextBoxColumn,
+            this.Edit});
             this.gridContacts.DataSource = this.contactoBindingSource;
             this.gridContacts.Location = new System.Drawing.Point(13, 123);
             this.gridContacts.Name = "gridContacts";
             this.gridContacts.RowTemplate.Height = 25;
             this.gridContacts.Size = new System.Drawing.Size(801, 332);
             this.gridContacts.TabIndex = 3;
+            this.gridContacts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridContacts_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -92,6 +95,14 @@
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
             this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // Edit
+            // 
+            this.Edit.HeaderText = "Edit";
+            this.Edit.Name = "Edit";
+            this.Edit.ReadOnly = true;
+            this.Edit.Text = "Edit";
+            this.Edit.UseColumnTextForLinkValue = true;
             // 
             // contactoBindingSource
             // 
@@ -177,11 +188,12 @@
         private TextBox textBox1;
         private Button buttSearch;
         private Button buttAdd;
+        private BindingSource contactoBindingSource;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private BindingSource contactoBindingSource;
+        private DataGridViewLinkColumn Edit;
     }
 }
