@@ -56,11 +56,11 @@ namespace crud_front
                                           tipo LinkCell*/
             DataGridViewLinkCell cell = (DataGridViewLinkCell)gridContacts.Rows[e.RowIndex].Cells[e.ColumnIndex];
 
-                  //Cuando se haya echo click
-                  //en una columna llamada
-                  //Edit
-            if (cell.Value.ToString() == "Edit"){
-            
+            //Cuando se haya echo click
+            //en una columna llamada
+            //Edit
+            if (cell.Value.ToString() == "Edit") {
+
                 addContact_Form addContact = new addContact_Form();
 
                 addContact.loadContact(new Contacto
@@ -74,6 +74,12 @@ namespace crud_front
 
                 });
                 addContact.ShowDialog(this);
+            }
+            else if (cell.Value.ToString() == "Delete"){
+
+                DeleteContact(int.Parse(gridContacts.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                populateContacts(); //Después de borrar al contacto, actualizamos la Grilla.
+            
             }
             
         }
@@ -96,6 +102,12 @@ namespace crud_front
             List<Contacto> Contact = _capadeNegocios.tenerContacts();
 
             gridContacts.DataSource = Contact;//Para que retorne a la grilla la lista de contactos
+
+        }
+
+        private void DeleteContact(int Id){
+
+            _capadeNegocios.DeleteContact(Id);
 
         }
 

@@ -142,6 +142,29 @@ namespace crud_front
 
         }
 
+        public void DeleteContact(int Id){
+
+            try
+            {
+                conn.Open();
+                string query = @"DELETE FROM users WHERE Id = @Id";
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.Add(new SqlParameter("@Id", Id));
+                command.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally{
+
+                conn.Close();
+            
+            }
+        
+        }
+
     }
 
 }

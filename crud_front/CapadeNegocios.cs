@@ -35,5 +35,13 @@ namespace crud_front
         
         }
 
+        //Mandamos solo el Id porque realmento no nos hace
+        //falta todo el objeto
+        public void DeleteContact(int Id){
+        
+            _capadeAccesoaDatos.DeleteContact(Id);
+        
+        }
+
     }
 }
