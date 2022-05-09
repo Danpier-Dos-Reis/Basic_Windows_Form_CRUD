@@ -19,17 +19,18 @@ namespace crud_front
 
         #region EVENTOS SIN USAR
 
-        private void buttSearch_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         #endregion
+
+        private void buttSearch_Click(object sender, EventArgs e)
+        {
+            populateContacts(textSearch.Text);
+            textSearch.Text = string.Empty;
+        }
 
         //Button Add
         private void button1_Click(object sender, EventArgs e)
@@ -97,9 +98,11 @@ namespace crud_front
             segundo.ShowDialog(this);//Muestra la ventada por sobre la otra como un pop up
         }
 
-        public void populateContacts(){
+        //Cuando yo a un método le indico un parametro que es nulo, siginifica que
+        //retornar ese valor es opcional. En este caso nuesto valor se llama searchText.
+        public void populateContacts(string searchText = null){
 
-            List<Contacto> Contact = _capadeNegocios.tenerContacts();
+            List<Contacto> Contact = _capadeNegocios.tenerContacts(searchText);
 
             gridContacts.DataSource = Contact;//Para que retorne a la grilla la lista de contactos
 

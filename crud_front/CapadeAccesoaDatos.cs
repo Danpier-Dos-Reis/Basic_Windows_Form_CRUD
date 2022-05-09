@@ -60,14 +60,35 @@ namespace crud_front
         
         }
 
-        public List<Contacto> tenerContacts(){
+        public List<Contacto> tenerContacts(string searchText = null)
+        {
 
             List<Contacto> Contact = new List<Contacto>();
 
             try{
                 conn.Open();
                 string query = @"SELECT Id, FirstName, LastName, Phone, Address FROM users";
-                SqlCommand command = new SqlCommand(query,conn);
+                SqlCommand command = new SqlCommand();
+
+
+                //Cuando searchText no sea ni nulo ni vacio. " ! " indica lo contrario a...
+                if (!string.IsNullOrEmpty(searchText)){
+
+                    query += @" WHERE FirstName LIKE @searchText
+                               OR LastName LIKE @searchText
+                               OR Phone LIKE @searchText
+                               OR Address LIKE @searchText";
+
+
+                    //Los %{contenido}% siginifican "no importa lo que haya adelante o atrás"
+                    //Lo que contenga la variable searchText lo inserta en @searchText que es
+                    //lenguaje SQL
+                    command.Parameters.Add(new SqlParameter("@searchText", $"%{searchText}%"));
+                
+                }
+
+                command.CommandText = query;
+                command.Connection = conn;
 
 
 

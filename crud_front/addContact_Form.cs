@@ -16,6 +16,16 @@ namespace crud_front
         private CapadeNegocios _capadeNegocios;
         private Contacto _Contacto;
 
+        public addContact_Form()
+        {
+            InitializeComponent();
+
+            //De esta forma podemos tener acceso a la capa
+            //de negocios que es la encargada de grabar los datos y
+            //el proceso que usará para grabar los datos.
+            _capadeNegocios = new CapadeNegocios();
+        }
+
         #region MÉTODOS
 
         private void saveContact(){
@@ -68,16 +78,6 @@ namespace crud_front
 
         #endregion
 
-        public addContact_Form()
-        {
-            InitializeComponent();
-
-            //De esta forma podemos tener acceso a la capa
-            //de negocios que es la encargada de grabar los datos y
-            //el proceso que usará para grabar los datos.
-            _capadeNegocios = new CapadeNegocios();
-        }
-
         #region EVENTOS
 
         #region EVENTOS QUE NO SIRVEN
@@ -104,8 +104,6 @@ namespace crud_front
             this.Close();
         }
 
-        #region BOTÓN ADD
-
         private void buttAddContact_Click(object sender, EventArgs e)
         {
             saveContact();
@@ -123,8 +121,6 @@ namespace crud_front
             usaramos "Owner", y como arte de magia todo funciona*/
             ((Main_Form)this.Owner).populateContacts();
         }
-        #endregion
-
         #endregion
 
     }

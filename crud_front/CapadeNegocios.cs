@@ -29,9 +29,10 @@ namespace crud_front
              
         }
 
-        public List<Contacto> tenerContacts(){
+        public List<Contacto> tenerContacts(string searchText = null)
+        {
         
-            return _capadeAccesoaDatos.tenerContacts();
+            return _capadeAccesoaDatos.tenerContacts(searchText);
         
         }
 
