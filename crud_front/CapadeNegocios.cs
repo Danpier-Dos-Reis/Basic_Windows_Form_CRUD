@@ -16,6 +16,7 @@ namespace crud_front
             _capadeAccesoaDatos= new CapadeAccesoaDatos();
         }
 
+        /*Los valores de 'Contact' los recibe del formulario addContact_Form*/
         public Contacto guardarContacto(Contacto Contact)
         {
             if (Contact.Id == 0) {

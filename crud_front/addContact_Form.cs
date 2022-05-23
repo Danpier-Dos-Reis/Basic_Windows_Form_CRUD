@@ -40,17 +40,26 @@ namespace crud_front
             Contact.Phone = txtPhone.Text;
             Contact.Address = txtAddress.Text;
 
-            //Si _Contacto no tiene nada, entonces _Contacto.Id = 0
+            /*Si _Contacto posee un valor, entonces _Contacto = _Contacto.Id
+             Si _Contacto no posee un valor, entonces _Contacto = 0*/
             Contact.Id = _Contacto != null ? _Contacto.Id : 0;
 
+
+            /*Le pasamos los valores de Contact a la función
+             que guarda/inserta los contactos*/
             _capadeNegocios.guardarContacto(Contact);
 
         }
 
-        public void loadContact(Contacto Contact)
+        public void loadContact(Contacto Contact)/*Contact va a contener los valores que
+                                                  que tenía anteriormente en la grilla*/
         {
-
+            /*Esto nos permite tener el ID, porque en el formulario no existe un
+             textBox donde metamos el ID. Necesitamos el ID para poder Editar
+             el contacto. Sino va a crear un nuevo contacto*/
             _Contacto = Contact;
+            /*El id lo metememos en la ventana Main cuando
+            ejecutamos la función loadContact() desde allá*/
 
             if (Contact != null){
 

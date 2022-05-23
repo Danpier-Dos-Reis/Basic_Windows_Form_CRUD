@@ -23,8 +23,8 @@ namespace crud_front
                                  VALUES (@FirstName, @LastName, @Phone, @Address)";
 
                 SqlParameter firstName = new SqlParameter();
-                firstName.ParameterName = "@FirstName";
-                firstName.Value = Contact.FirstName;
+                firstName.ParameterName = "@FirstName"; //Este parámetro/variable posee el valor que se encuentra
+                firstName.Value = Contact.FirstName; //en la propiedad FirstName del objeto 'Contact'
                 firstName.DbType = System.Data.DbType.String;
 
                 #endregion
@@ -94,7 +94,7 @@ namespace crud_front
 
                 /*El "ExecuteReader" retorna un DataReader que posee todas la filas
                 que cumplen con los requisitos de nuestra consulta. En este caso todas
-                las filas poseen las culumnas indicadas en la consulta por lo que nos
+                las filas poseen las columnas indicadas en la consulta por lo que nos
                 debería retornar todas las filas.*/
                 SqlDataReader reader = command.ExecuteReader();
 

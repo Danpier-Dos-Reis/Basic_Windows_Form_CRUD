@@ -44,26 +44,22 @@ namespace crud_front
         }
 
 
-        /*Este evento es cuando se hace click a un elemento dentros de la celda
+        /*Este evento es cuando se hace click a un elemento dentro de la celda
          del Grid*/
         private void gridContacts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*aquí capturamos si en lo que se hizo click fue en una celda que contenga el link. Si no lo es,
-             va a retornar una valor que no es de tipo "DataGridViewLinkCell" por lo que "cell = null".
-            
-                                          Esta parte (DataGridViewLinkCell)
-                                          Verifica que el valor
-                                          que se devuelva sea de
-                                          tipo LinkCell*/
+            /*Aquí capturamos si en lo que se hizo click fue en una celda que contenga el link. Si no lo es,
+             va a retornar un valor que no es de tipo "DataGridViewLinkCell" por lo que "cell = null". 'cell' va
+             a guardar la columna y la fila que le hicimos click*/
             DataGridViewLinkCell cell = (DataGridViewLinkCell)gridContacts.Rows[e.RowIndex].Cells[e.ColumnIndex];
 
-            //Cuando se haya echo click
-            //en una columna llamada
-            //Edit
+            /*Si el valor de cell (convertido a string) dentro de la celda que
+              hicimos click es igual a "Edit"*/
             if (cell.Value.ToString() == "Edit") {
 
                 addContact_Form addContact = new addContact_Form();
 
+                /*Ejecutamos la función que carga los contactos en el addContact_Form*/
                 addContact.loadContact(new Contacto
                 {
 

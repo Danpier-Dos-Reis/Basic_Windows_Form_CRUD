@@ -41,3 +41,28 @@ C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runti
 C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\danpier\Desktop\CRUD_Solution\crud_front\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\danpier\Desktop\CRUD_Solution\crud_front\obj\Debug\net6.0-windows\crud_front.csproj.CopyComplete
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\crud_front.exe
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\crud_front.deps.json
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\crud_front.runtimeconfig.json
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\crud_front.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\crud_front.pdb
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.csproj.AssemblyReference.cache
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.addContact_Form.resources
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.Main_Form.resources
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.csproj.GenerateResource.cache
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.AssemblyInfoInputs.cache
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.AssemblyInfo.cs
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.csproj.CoreCompileInputs.cache
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.csproj.CopyComplete
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\refint\crud_front.dll
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.pdb
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\crud_front.genruntimeconfig.cache
+C:\Users\danpier\Desktop\Other Project\Basic_Windows_Form_CRUD\crud_front\obj\Debug\net6.0-windows\ref\crud_front.dll

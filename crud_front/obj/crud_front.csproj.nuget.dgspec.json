@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danpier\\Desktop\\CRUD_Solution\\crud_front\\crud_front.csproj": {}
+    "C:\\Users\\danpier\\Desktop\\Other Project\\Basic_Windows_Form_CRUD\\crud_front\\crud_front.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danpier\\Desktop\\CRUD_Solution\\crud_front\\crud_front.csproj": {
+    "C:\\Users\\danpier\\Desktop\\Other Project\\Basic_Windows_Form_CRUD\\crud_front\\crud_front.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danpier\\Desktop\\CRUD_Solution\\crud_front\\crud_front.csproj",
+        "projectUniqueName": "C:\\Users\\danpier\\Desktop\\Other Project\\Basic_Windows_Form_CRUD\\crud_front\\crud_front.csproj",
         "projectName": "crud_front",
-        "projectPath": "C:\\Users\\danpier\\Desktop\\CRUD_Solution\\crud_front\\crud_front.csproj",
+        "projectPath": "C:\\Users\\danpier\\Desktop\\Other Project\\Basic_Windows_Form_CRUD\\crud_front\\crud_front.csproj",
         "packagesPath": "C:\\Users\\danpier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danpier\\Desktop\\CRUD_Solution\\crud_front\\obj\\",
+        "outputPath": "C:\\Users\\danpier\\Desktop\\Other Project\\Basic_Windows_Form_CRUD\\crud_front\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dkUmvHYie6RyuCRiXfZdgsy74RQWc9Cv91KeHLYWkXKh4ft98l8sfvg33D6PZyrUf1SW22ChsFHW7ZzB5/UKvQ==",
+  "dgSpecHash": "gZkF1KuJMgixM3Hec57rAJpB98GXOww53qBGWtQU9ExHkUSgfHUyUVEm/XLENG3dyFXafu6i4qZw5SwdHX9+TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danpier\\Desktop\\CRUD_Solution\\crud_front\\crud_front.csproj",
+  "projectFilePath": "C:\\Users\\danpier\\Desktop\\Other Project\\Basic_Windows_Form_CRUD\\crud_front\\crud_front.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danpier\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\danpier\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
